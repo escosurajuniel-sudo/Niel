@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Juniel Teraytay — Portfolio</title>
+  <link rel="icon" href="images/ux.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <div class="logo">
+        <img src="images/logo.png" alt="Juniel Logo" style="height:40px; border-radius:8px;">
+        <div>
+          <div style="font-size:11px;color:var(--muted);margin-top:2px">Software Developer • Student</div>
+        </div>
+      </div>
+      <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-left">
+          <div style="background:#22130f;color:var(--accent);display:inline-block;padding:6px 10px;border-radius:6px;font-weight:600">Welcome! I'm</div>
+          <h1>Juniel Teraytay</h1>
+          <div class="sub">College student • Aspiring Software Developer • Java, Web, App Dev</div>
+          <p style="color:var(--muted);max-width:620px">I build practical, elegant software and web interfaces. I enjoy turning ideas into working apps and exploring clean UI/UX. Below are a few services and projects I've worked on; feel free to reach out for freelance or collaboration.</p>
+          <div class="cta" style="margin-top:18px">
+            <a class="btn-primary" href="services.html">Hire Me</a>
+            <a class="btn-ghost" href="portfolio.html">Explore</a>
+          </div>
+        </div>
+        <div class="profile-card">
+          <div class="avatar" aria-hidden="true" style="background-image: url('images/3.jpg');"></div>
+        </div>
+      </section>
+
+      <!-- About Preview -->
+      <section id="about-preview">
+        <div class="section-title">About Me</div>
+        <p style="color:var(--muted);max-width:700px;line-height:1.6">
+          Hi! I'm Juniel Teraytay, a college student and aspiring software developer. I specialize in Java, Web Development, and UI/UX design. <a href="about.html" style="color:var(--accent)">Learn more →</a>
+        </p>
+      </section>
+
+      <!-- Services Preview -->
+      <section id="services-preview">
+        <div class="section-title">My Services</div>
+        <div class="services">
+          <div class="card"><h3>Web Development</h3><p>Responsive websites, front-end and back-end integration.</p></div>
+          <div class="card"><h3>Application Development</h3><p>Desktop and mobile apps using Java & Android basics.</p></div>
+          <div class="card"><h3>UI / UX & Graphic Design</h3><p>Clean mockups, logos, and visuals for apps and websites.</p></div>
+        </div>
+        <a href="services.html" class="btn" style="margin-top:16px;display:inline-block">See all Services →</a>
+      </section>
+
+      <!-- Portfolio Preview -->
+      <section id="portfolio-preview">
+        <div class="section-title">Portfolio</div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/4.png" alt="Student Portal">
+              <div class="project-info"><strong>Student Portal</strong><br>Java + MySQL</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/2.png" alt="Bank System">
+              <div class="project-info"><strong>Bank System</strong><br>Java App</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/5.png" alt="Laundry Management">
+              <div class="project-info"><strong>Laundry Management</strong><br>Inventory & Reports</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="images/6.png" alt="Portfolio Website">
+              <div class="project-info"><strong>Portfolio Website</strong><br>Personal showcase</div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <a href="portfolio.html" class="btn" style="margin-top:16px;display:inline-block">See Full Portfolio →</a>
+      </section>
+
+      <!-- Contact Preview -->
+      <section id="contact-preview">
+        <div class="section-title">Contact Me</div>
+        <p style="color:var(--muted);margin-bottom:18px">Feel free to reach out for collaborations, freelance work, or just to connect! <a href="contact.html" style="color:var(--accent)">Contact →</a></p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <img src="images/logo.png" alt="Juniel Logo" style="height:28px; border-radius:6px;">
+        <span>© 2025 Juniel. All rights reserved.</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
