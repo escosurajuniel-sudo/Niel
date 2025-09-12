@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Resume - Niel Teraytay</title>
   <!-- Favicon & Logo -->
-  <link rel="icon" href="https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/546619758_122114187098976753_1336524100150005680_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEk8shyrBHlGlFvGpe2RChwOGwS5oISUk84bBLmghJST8Ct7nbVqrOFWusLi7FrmIFazy1XlCPh5cwc3j19h-gs&_nc_ohc=QwTNhSsLk-YQ7kNvwH19LNe&_nc_oc=AdlccwTkjIHeyFnrzpvCWO9cTxLQdGlHQaeUB_GTHKKE8wlBiveT4S0s4iT0rf5d0khnH0VZZQW7p90SYZN1jIkY&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=fcd4JderOP0cA5SfEUD9rQ&oh=00_AfZiakTBoiUwDky7lB5WMPw-3jjxlPEZAzKrWTtLnL9nAQ&oe=68C96E81" />
+  <link
+    rel="icon"
+    href="https://scontent.fmnl13-3.fna.fbcdn.net/v/t39.30808-6/546619758_122114187098976753_1336524100150005680_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeEk8shyrBHlGlFvGpe2RChwOGwS5oISUk84bBLmghJST8Ct7nbVqrOFWusLi7FrmIFazy1XlCPh5cwc3j19h-gs&_nc_ohc=QwTNhSsLk-YQ7kNvwH19LNe&_nc_oc=AdlccwTkjIHeyFnrzpvCWO9cTxLQdGlHQaeUB_GTHKKE8wlBiveT4S0s4iT0rf5d0khnH0VZZQW7p90SYZN1jIkY&_nc_zt=23&_nc_ht=scontent.fmnl13-3.fna&_nc_gid=fcd4JderOP0cA5SfEUD9rQ&oh=00_AfZiakTBoiUwDky7lB5WMPw-3jjxlPEZAzKrWTtLnL9nAQ&oe=68C96E81"
+  />
   <style>
     body {
       margin: 0;
       font-family: "Poppins", sans-serif;
       background: #f5f7fa;
       color: #333;
+      line-height: 1.6;
     }
 
     /* Header Banner */
     .header-banner {
       background: linear-gradient(
-          rgba(0, 123, 255, 0.6), 
+          rgba(0, 123, 255, 0.6),
           rgba(0, 123, 255, 0.6)
         ),
-        url("https://th.bing.com/th/id/OIP.q1aTGdnvPfTP8iF8p-wj-gHaEo?w=309&h=193&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3") 
-        no-repeat center/cover;
+        url("https://th.bing.com/th/id/OIP.q1aTGdnvPfTP8iF8p-wj-gHaEo?w=309&h=193&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3")
+          no-repeat center/cover;
       height: 220px;
       position: relative;
     }
@@ -29,25 +33,25 @@
     /* Profile Card */
     .profile-card {
       background: #fff;
-      width: 85%;
-      max-width: 900px;
-      margin: -70px auto 30px;
+      width: 90%;
+      max-width: 800px;
+      margin: -80px auto 40px;
       border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-      padding: 30px;
+      padding: 40px 35px 35px;
       text-align: center;
       position: relative;
       z-index: 10;
     }
 
     .profile-card img {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       object-fit: cover;
       border: 6px solid #fff;
       background: #eee;
-      margin-top: -100px;
+      margin-top: -110px;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -56,109 +60,168 @@
     }
 
     .profile-card img:hover {
-      transform: scale(1.05);
+      transform: scale(1.07);
       box-shadow: 0 6px 18px rgba(0, 123, 255, 0.6);
     }
 
     .profile-card h1 {
-      margin: 15px 0 5px;
-      font-size: 28px;
+      margin: 18px 0 8px;
+      font-size: 30px;
       font-weight: 600;
       color: #222;
     }
 
     .profile-card p {
-      font-size: 15px;
+      font-size: 16px;
       color: #666;
+      letter-spacing: 0.03em;
     }
 
     .profile-buttons {
-      margin: 20px 0;
+      margin: 25px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
     }
 
     .profile-buttons a {
       text-decoration: none;
       color: white;
       background: #007bff;
-      padding: 10px 22px;
+      padding: 12px 28px;
       border-radius: 30px;
-      margin: 0 10px;
-      font-size: 14px;
-      transition: 0.3s;
-      box-shadow: 0 3px 8px rgba(0, 123, 255, 0.3);
+      font-size: 15px;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 123, 255, 0.35);
+      display: inline-block;
+      min-width: 120px;
+      text-align: center;
     }
 
     .profile-buttons a.download {
       background: #28a745;
-      box-shadow: 0 3px 8px rgba(40, 167, 69, 0.3);
+      box-shadow: 0 3px 10px rgba(40, 167, 69, 0.35);
     }
 
     .profile-buttons a:hover {
       opacity: 0.9;
-      transform: translateY(-2px);
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 7px 20px rgba(0, 123, 255, 0.45);
     }
 
     /* Section Container */
     .section {
-      max-width: 900px;
-      margin: 20px auto;
+      max-width: 780px;
+      margin: 40px auto;
       background: #fff;
-      padding: 25px;
+      padding: 30px 35px 35px;
       border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
     }
 
     .section h2 {
-      margin-bottom: 15px;
-      font-size: 20px;
+      margin-bottom: 22px;
+      font-size: 22px;
       color: #444;
-      border-bottom: 2px solid #007bff;
-      display: inline-block;
-      padding-bottom: 5px;
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 7px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
     }
 
+    /* Lists */
     .section ul {
-      padding-left: 20px;
-      line-height: 1.8;
+      padding-left: 22px;
+      line-height: 1.9;
+      color: #555;
+      font-size: 15px;
     }
 
-    /* Skills Grid */
     .skills-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
     }
 
     .skill-box {
       background: #f9fafc;
-      padding: 15px;
-      border-radius: 8px;
+      padding: 20px 25px;
+      border-radius: 10px;
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.03);
+      font-weight: 500;
+      font-size: 15px;
     }
 
     /* Experience Cards */
     .experience-item {
-      margin-bottom: 20px;
+      margin-bottom: 26px;
     }
 
     .experience-item h4 {
-      margin: 0;
-      font-size: 16px;
+      margin: 0 0 6px;
+      font-size: 17px;
       color: #007bff;
+      font-weight: 600;
     }
 
     .experience-item span {
-      font-size: 13px;
-      color: #555;
+      font-size: 14px;
+      color: #666;
+      font-style: italic;
+      display: block;
+      margin-bottom: 10px;
     }
 
     .experience-item ul {
-      margin-top: 8px;
+      margin-top: 4px;
+      padding-left: 20px;
+      color: #444;
+      font-size: 15px;
+      line-height: 1.75;
     }
 
     /* Contact Section */
     .contact-info p {
-      margin: 8px 0;
-      font-size: 14px;
+      margin: 12px 0;
+      font-size: 15px;
+      color: #444;
+      letter-spacing: 0.02em;
+    }
+
+    .contact-info a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Fade-In Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-section {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: all 0.6s ease-out;
+      will-change: transform, opacity;
+    }
+
+    .fade-in-section.is-visible {
+      opacity: 1;
+      transform: none;
+      animation: fadeInUp 0.6s ease-out forwards;
     }
   </style>
 </head>
@@ -168,13 +231,14 @@
 
   <!-- Profile Card -->
   <div class="profile-card">
-    <img src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/544750027_122112903380976753_9045455015153693954_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeE3FJzej7hq8CQv3MmASQASi3Gj3laik3KLcaPeVqKTcghtru6z7KrISSDyy093qtclZea7O033FYLCESeJu1Q5&_nc_ohc=LppHYJfrylYQ7kNvwHNHj5G&_nc_oc=Adkzkyw6zMPIJsozUp5rNDxeNuTDCkALeh5RIfyZlvLkuRb3CgJFj-5vkOphWu59W5BTfrfRIF2avtMu1mYPzHTl&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=fcd4JderOP0cA5SfEUD9rQ&oh=00_AfaXVLyBamz_4E__mkyAm4pYIIgxVEplqaXxkJ6BudD0MQ&oe=68C9799F" alt="Profile Picture">
+    <img
+      src="https://scontent.fmnl13-4.fna.fbcdn.net/v/t39.30808-6/544750027_122112903380976753_9045455015153693954_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeE3FJzej7hq8CQv3MmASQASi3Gj3laik3KLcaPeVqKTcghtru6z7KrISSDyy093qtclZea7O033FYLCESeJu1Q5&_nc_ohc=LppHYJfrylYQ7kNvwHNHj5G&_nc_oc=Adkzkyw6zMPIJsozUp5rNDxeNuTDCkALeh5RIfyZlvLkuRb3CgJFj-5vkOphWu59W5BTfrfRIF2avtMu1mYPzHTl&_nc_zt=23&_nc_ht=scontent.fmnl13-4.fna&_nc_gid=fcd4JderOP0cA5SfEUD9rQ&oh=00_AfaXVLyBamz_4E__mkyAm4pYIIgxVEplqaXxkJ6BudD0MQ&oe=68C9799F"
+      alt="Profile Picture"
+    />
     <h1>Niel Teraytay</h1>
     <p>Full-Stack Web Developer</p>
     <div class="profile-buttons">
-      <!-- Actual Download -->
       <a href="" class="download" download>Download CV</a>
-
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -183,9 +247,9 @@
   <div class="section">
     <h2>Profile</h2>
     <p>
-      Passionate web developer with 4+ years of experience building responsive and dynamic 
-      web applications. Skilled in both front-end and back-end development, with strong 
-      problem-solving abilities and a keen eye for clean UI/UX. Dedicated to delivering 
+      Passionate web developer with 4+ years of experience building responsive and dynamic
+      web applications. Skilled in both front-end and back-end development, with strong
+      problem-solving abilities and a keen eye for clean UI/UX. Dedicated to delivering
       modern, scalable, and efficient digital solutions.
     </p>
   </div>
@@ -251,7 +315,8 @@
     <h2>Education</h2>
     <ul>
       <li>
-        <strong>Bachelor of Science in Computer Science</strong> – Saint Paul University Philippines (2014 - 2018)
+        <strong>Bachelor of Science in Computer Science</strong> – Saint Paul University Philippines (2014
+        - 2018)
       </li>
       <li>
         <strong>Full-Stack Web Development Bootcamp</strong> – freeCodeCamp & Udemy (2019)
@@ -263,10 +328,9 @@
   <div class="section contact-info" id="contact">
     <h2>Contact</h2>
     <p>📞 +63 912 345 6789</p>
-    <p>✉️ niel.teraytay.dev@gmail.com</p>
-    <p>📍 Cebu City, Philippines</p>
-    <p>💻 <a href="https://github.com/escosurajuniel" target="_blank">GitHub</a> | 
-       <a href="https://www.linkedin.com/in/juniel-teraytay-767672380/" target="_blank">LinkedIn</a></p>
+    <p>✉️ <a href="mailto:niel.teraytay@example.com">niel.teraytay@example.com</a></p>
+    <p>🌐 <a href="https://github.com/nielteraytay" target="_blank" rel="noopener noreferrer">github.com/nielteraytay</a></p>
+    <p>🌐 <a href="https://linkedin.com/in/nielteraytay" target="_blank" rel="noopener noreferrer">linkedin.com/in/nielteraytay</a></p>
   </div>
 </body>
 </html>
